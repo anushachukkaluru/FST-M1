@@ -1,25 +1,20 @@
 package Activities;
 
-public class Activity2{
-
-
-
-    public static void function() {
-        int[] digits= {10, 77, 10, 54, -11, 10};
-        int tmp=0;
-        for (int digit: digits) {
-            if (digit == 10) {
-                tmp = tmp + digit;
-            }
-
+public class Activity2 {
+	
+    public static void main(String[] args) {
+        
+    	int result = 0;
+    	
+        int[] nums = {10, 77, 10, 54, -11, 10};
+        
+        for (int i: nums) {
+        	if (i==10) {
+        		result = result +10;
+        		
+        	}
         }
-        if(tmp == 30)
-        {System.out.println("temp value is as expected");}
+        
+       System.out.println("Sum is:" +result);
     }
-       public static void main(String[] args)
-       {
-           function();
-       }
-    }
-
-
+}
